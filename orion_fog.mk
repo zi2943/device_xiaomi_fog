@@ -10,12 +10,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 720
+
 
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-PRODUCT_NAME := lineage_fog
+# Orion flags
+ORION_MAINTAINER := Zidnz0
+ORION_MAINTAINER_LINK := https://t.me/zidnz0
+ORION_GAPPS := false
+TARGET_ENABLE_BLUR := true 
+BUILD_GOOGLE_CONTACTS := false
+BUILD_GOOGLE_DIALER := false
+BUILD_GOOGLE_MESSAGE := false
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := orion_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
