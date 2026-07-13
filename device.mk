@@ -556,4 +556,4 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product, vendor/xiaomi/fog/fog-vendor.mk)
 
 # Miui Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+$(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
