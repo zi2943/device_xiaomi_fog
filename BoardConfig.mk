@@ -250,6 +250,3 @@ QC_WIFI_HIDL_FEATURE_DUAL_AP := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/fog/BoardConfigVendor.mk
-
-# Miui Camera
-include vendor/xiaomi/miuicamera/SEPolicy.mk
