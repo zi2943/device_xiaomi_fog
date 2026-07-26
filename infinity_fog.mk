@@ -15,6 +15,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 INFINITY_BUILD_TYPE := UNOFFICIAL
 INFINITY_MAINTAINER := "Zidnz0"
 TARGET_BOOT_ANIMATION_RES := 720
+TARGET_DISABLE_MATLOG := true
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := false
 
