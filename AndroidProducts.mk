@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fog.mk
+    $(LOCAL_DIR)/infinity_fog.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_fog-user \
+    infinity_fog-userdebug \
+    infinity_fog-eng
