@@ -13,7 +13,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Infinity Flags
 INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := "Zidnz0"
+INFINITY_MAINTAINER := "zidnz0"
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_DISABLE_MATLOG := true
 TARGET_SUPPORTS_BLUR := true
