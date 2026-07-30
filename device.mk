@@ -595,3 +595,6 @@ $(call inherit-product, vendor/xiaomi/fog/fog-vendor.mk)
 
 # Inherit from vendor Miui Camera
 $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
+
+# Viper4fx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
