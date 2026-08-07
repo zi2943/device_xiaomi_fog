@@ -9,15 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-
-# Infinity Flags
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := "zidnz0"
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_DISABLE_MATLOG := true
-TARGET_SUPPORTS_BLUR := true
+LUNARIS_BUILD_TYPE := Unoffical
+SURFACE_FLINGER_BOOST := true
+TARGET_ENABLE_BLUR := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_ACCORD ?= true
+TARGET_SUPPORTS_OMX_SERVICE := false
+TARGET_DISABLE_MATLOG := true
 
 # Gapps
 WITH_GAPPS := false
@@ -25,7 +29,7 @@ WITH_GAPPS := false
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-PRODUCT_NAME := infinity_fog
+PRODUCT_NAME := lineage_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
