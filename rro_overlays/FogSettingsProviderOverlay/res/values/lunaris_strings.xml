@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Model and Hardware -->
-    <string name="lunaris_device_message">Redmi 10C(EOL)</string>
+    <string name="lunaris_device_message">Redmi 10C</string>
     <string name="lunaris_processor_code_message">Snapdragon® 680</string>
     <string name="lunaris_battery_type_message">5000 mAh</string>
     <string name="lunaris_screen_message">720 x 1650 | 60hz</string>
