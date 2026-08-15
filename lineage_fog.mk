@@ -14,6 +14,16 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
 
+# RisingOS flags
+RISING_MAINTAINER := zidnz0
+TARGET_ENABLE_BLUR := false
+RISING_PACKAGE_TYPE := "VANILLA AOSP"
+WITH_GMS := false
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon® 680" \
+    RISING_MAINTAINER="zidnz0"
+
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
