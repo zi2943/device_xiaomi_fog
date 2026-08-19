@@ -14,9 +14,6 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
-# Inherit GMS if available
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
