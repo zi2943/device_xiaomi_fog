@@ -552,3 +552,6 @@ $(call inherit-product, vendor/xiaomi/fog/fog-vendor.mk)
 
 # miuicam
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
+# Private Keys
+include vendor/arrow/signing/keys/keys.mk
